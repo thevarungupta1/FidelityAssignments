@@ -1,4 +1,4 @@
-package JavaLearning;
+package JavaLearning.Day2;
 public class MonthlyEMICalculator {
     public static void main(String[] args) {
             double principal =2500 ;

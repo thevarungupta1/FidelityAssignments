@@ -1,4 +1,4 @@
-package JavaLearning;
+package JavaLearning.Day3;
 
 public class IntegerValueTillTwenty {
     public static void main(String[] args) {

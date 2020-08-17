@@ -1,4 +1,4 @@
-package JavaLearning;
+package JavaLearning.Day3;
 
 public class TableOfSix {
     public static void main(String[] args) {

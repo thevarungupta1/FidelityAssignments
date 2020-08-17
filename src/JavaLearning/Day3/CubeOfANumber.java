@@ -1,4 +1,4 @@
-package JavaLearning;
+package JavaLearning.Day3;
 
 public class CubeOfANumber {
     public static void main(String[] args) {
