@@ -11,11 +11,13 @@ interface queue {
 
 class operations implements queue {
 
+    String newstring;
+
     @Override
     public void insert() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the string you want to insert:");
-        String newstring = "" + sc.nextLine();
+        newstring = "" + sc.nextLine();
         System.out.println("Added string is :" + " " + newstring);
 
     }
@@ -23,15 +25,12 @@ class operations implements queue {
     @Override
     public void delete() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the string:");
-        String string = sc.nextLine();
-
         System.out.print("Enter the middle word need to be deleted:");
         String word = sc.nextLine();
 
-        if (string.contains(word))
-            string = string.replaceAll(word + " ", "");
-        System.out.println("After deletion string is:" + " " + string);
+        if (newstring.contains(word))
+            newstring = newstring.replaceAll(word + " ", "");
+        System.out.println("After deletion string is:" + " " + newstring);
     }
 }
 
