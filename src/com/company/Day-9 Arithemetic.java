@@ -1,5 +1,7 @@
 
- abstract class Arithemetic {
+public class Arithemetic {
+
+
 
 	public int add(int a, int b) {
 		int sum=a+b;
