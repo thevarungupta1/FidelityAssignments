@@ -1,4 +1,4 @@
-package com.company;
+package Assigment;
 
 class Main extends MyBook {
 

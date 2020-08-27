@@ -1,4 +1,4 @@
-package com.company;
+package Assigment;
 
 abstract class Book {
 	static String title;

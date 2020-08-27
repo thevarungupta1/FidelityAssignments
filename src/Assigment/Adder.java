@@ -1,4 +1,4 @@
-package com.company;
+package Assigment;
 
 class Adder extends Arithmetic {
 
