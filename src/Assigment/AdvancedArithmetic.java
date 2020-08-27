@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface AdvancedArithmetic {
 	
-	List<Integer> divisor_sum(int n);
+	int divisor_sum(int n);
 
 }
