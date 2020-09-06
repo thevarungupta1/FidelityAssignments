@@ -7,29 +7,25 @@ import java.util.Scanner;
 
 public class Excercise_MissingLetter {
 
-    public static void missingLetters(String s){
-
-        char[] stanalphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-        char[] array = new char[s.length()];
-        for (int i=0 ; i< s.length() ; i++){
-            array[i] = s.charAt(i);
+    public static void findMissingLetters(String input){
+        boolean[] present = new boolean[input.length()];
+        input = input.toLowerCase();
+        for(int i=0;i<input.length();i++){
+            char c = input.charAt(i);
+            if(c>='a' && c<='z'){
+                present[c-'a'] = true;
+            }
         }
-
-        for(int j=0; j< array.length ; j++){
-            for (int k=0 ; k<stanalphabet.length ; k++){
-                if (array[j] == stanalphabet[k]){
-                    int indexOffirstChar = k;
-                    System.out.println(stanalphabet[k]);
-                }else{
-                    //System.out.println(stanalphabet[k]+" "+"is missing");
-                    continue;
-                }
+        for(int i=0;i<input.length();i++){
+            if(!present[i]){
+                System.out.print((char)(i+'a') +  "   ");
             }
         }
     }
 
+
     public static void main(String[] args) {
-        missingLetters("mnpq");
+        findMissingLetters("abcefg");
 
 
     }
