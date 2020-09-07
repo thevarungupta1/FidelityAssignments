@@ -19,7 +19,7 @@ public class MissingLetter {
 			ascii = (int) c;
 			int check = ascii - temp;
 			if (check > 1 && temp != 0) {
-				for(int k=1;k<check;k++) {
+				for (int k = 1; k < check; k++) {
 					f = (char) (temp + k);
 					s = s + " " + f;
 				}
@@ -31,6 +31,7 @@ public class MissingLetter {
 			System.out.println(s);
 		}
 	}
+
 	public static void main(String[] args) {
 
 		MissingLetter ml = new MissingLetter();
