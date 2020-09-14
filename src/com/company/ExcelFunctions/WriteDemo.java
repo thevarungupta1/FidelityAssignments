@@ -9,8 +9,8 @@ public class WriteDemo {
 		// TODO Auto-generated method stub
 
 		FileOutputStream fos = new FileOutputStream("Reading.txt", true);
-		String text = "My Name is Himanshu"
-				+ "Expecting it in next line";
+		String text =  "\n My Name is Himanshu"
+				+ "\n Expecting it in next line";
 		fos.write(text.getBytes());
 		fos.flush();
 		System.out.println("Text Entered");
