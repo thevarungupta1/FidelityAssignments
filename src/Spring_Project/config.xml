@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+
+<bean class="com.Spring_Project.springdemo.Child" name="child">
+	<property name="name"  value="Child name "/>
+</bean>
+
+
+<bean class="com.thevarungupta.springdemo.Parent" name="parent">
+	<property name="name" value="Parent name" />
+
+	<property name="childName">
+		<ref bean="child"/>
+	</property>
+
+</bean>
+
+
+
+</beans>
